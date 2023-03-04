@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .calendar-head {
+        @apply text-2xl font-bold mr-4 cursor-pointer
+    }
+
+    .calendar-week {
+        @apply inline-block bg-gray-200 rounded-lg text-center box-border py-4 w-[13.6%]
+    }
+
+    .calendar-day {
+        @apply inline-block bg-gray-100 rounded-lg text-center box-border py-4 w-[13.6%]
+    }
+}
